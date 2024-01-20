@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\.angular",
-    "\\src",
     "\\src\\app",
     "\\src\\app\\user-tabel"
   ],
-  "SelectedNode": "\\src\\app\\user-tabel\\user-tabel.component.html",
   "PreviewInSolutionExplorer": false
 }
