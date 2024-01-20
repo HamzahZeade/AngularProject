@@ -1,0 +1,59 @@
+.example-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .dashboard-card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    max-height: 100%;
+    justify-content: justify;
+    align-items: stretch;
+    margin-top: -50px;
+ }
+ 
+ /* Remove border from mat-card */
+  .subcard{
+    border: none !important;
+  }
+  .image {
+    height: 100px;
+    width: 160px;
+  }
+  /* If you want to remove the box-shadow as well */
+  .subcard {
+    border: none !important;
+    box-shadow: none!important ;
+  }
+.titleParinCard{
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.49px;
+    color: #506E85;
+}
+
+  .title{
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.36px;
+  }
+  .detail {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.05px;
+    color: #506E85;
+
+  }
+  .horizontal-line {
+    border-bottom: 1px solid #F0F5FB; /* 1px solid black line */
+    margin: 20px 0; /* Optional: Add margin for spacing */
+  }
+ 

@@ -1,0 +1,36 @@
+<!-- card.component.html -->
+
+
+
+<mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" aria-label="Toggle menu">
+          <mat-icon svgIcon="shopping"></mat-icon>
+        </button>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <div class="d-flex flex-column align-items-start justify-content-between mt-0">
+          <!-- You can add other contant here if needed -->
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- You can add other actions here if needed -->
+      <div class="d-flex flex-column align-items-start justify-content-between mt-0">
+        <!-- Title Row -->
+        <div class="d-flex align-items-center">
+          <div class="wrapper2">
+            <label class="numberCard">255</label>
+          </div>
+        </div>
+        <!-- Number Row -->
+        <div class="d-flex align-items-center">
+          <div class="wrapper2">
+            <label class="bold-label me-1 ms-2 labelCard">{{ title }}</label>
+          </div>
+        </div>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+  

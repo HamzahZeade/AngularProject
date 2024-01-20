@@ -1,0 +1,39 @@
+
+<mat-card class="header">
+    <div class="inline-items">
+      <div class="labelCard">
+        <mat-icon svgIcon="home"></mat-icon> Blogs
+      </div>
+    
+    </div>
+    <div class="dicription">
+      <label>Total Blogs : 10</label>
+    </div>
+  </mat-card>
+<mat-grid-list cols="2" rowHeight="400px"  >
+    <mat-grid-tile class="tile-with-margin" *ngFor="let i of data" [colspan]="(cardLayout | async)?.miniCard?.cols" [rowspan]="1">
+        <mat-card class="example-card ">
+          <mat-card-content class="matcardcontent">
+            <div  class="left-section">
+                <img src="assets/icons/sunTower.png" alt="User Image" class="imagecard" >
+            </div>
+            <div class="right-section ">
+                <h1>Lorem ipsum dolor</h1>
+                <p class="detail">{{longText}}</p>
+                <div class="inline-items">
+                    <label style="color: #47A1F6;">Read More</label>
+                </div>
+                <div class="icon-and-text">
+                    <mat-icon svgIcon="timer"></mat-icon> 22 July 2020
+                    <mat-icon svgIcon="person"></mat-icon> Alex Pau
+                  </div>
+            </div>
+
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+  </mat-grid-list>
+  
+
+
+

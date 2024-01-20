@@ -1,0 +1,24 @@
+
+<mat-card class="header">
+    <div class="inline-items">
+      <div class="labelCard">
+        <mat-icon svgIcon="home"></mat-icon> Users
+      </div>
+      <mat-card-actions align="end" class="actions-container">
+        <button mat-icon-button (click)="onChangeListMode(false)" matTooltip="Switch to Table View"
+                [ngStyle]="{'color': !isCardViewActive ? 'blue' : 'black'}">
+          <mat-icon svgIcon="list"></mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" (click)="onChangeListMode(true)" matTooltip="Switch to Card View"
+                [ngStyle]="{'color': isCardViewActive ? 'blue' : 'black'}">
+          <mat-icon svgIcon="apps"></mat-icon>
+        </button>
+      </mat-card-actions>
+    </div>
+    <div class="dicription">
+      <label>Total User : {{countofUser}}</label>
+    </div>
+  </mat-card>
+  
+  
+  

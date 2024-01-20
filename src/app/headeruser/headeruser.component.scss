@@ -1,0 +1,57 @@
+.header{
+    margin: 10px;
+    background-color: rgba(255, 255, 252, 1) !important;;
+}
+.labelCard {
+    color: #506E85;
+    font-family: 'Proxima Nova', sans-serif; // Make sure to include Proxima Nova in your project
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.36px;
+  }
+
+  .dicription{
+    border: 10px;
+    background-color: #f8fbfd;
+    padding: 10px;
+    border-radius :10px;
+    margin-bottom: 10px;
+    
+    
+  }
+  .inline-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center;
+}
+  .actions-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.separator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 24px; /* Adjust as needed */
+    background-color: black;
+  }
+.example-icon {
+    margin-left: auto;
+}
+.card {
+    background-color: rgba(255, 255, 252, 1);;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    margin-top: 71px !important;
+    width: 190px !important;
+    height: 160px !important;
+    margin: 4px ;
+  }

@@ -1,0 +1,28 @@
+
+<!-- <div class="grid-container">
+    <app-headeruser t (listModeChanged)="onListModeChanged($event)"></app-headeruser >
+
+    <mat-grid-list cols="6" rowHeight="300px" class="my-grid-tile" gutterSize="10px">
+        <mat-grid-tile *ngFor="let i of [1, 2, 3, 4,5,6,7,8,9,10]" [colspan]="(cardLayout | async)?.miniCard?.cols" [rowspan]="1">
+         <app-home-card title="Card {{i}}"></app-home-card> 
+          <app-user-card></app-user-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+<app-user-tabel></app-user-tabel>
+</div> -->
+<div class="grid-container">
+    <app-headeruser [countofUser]="countofUser" (listModeChanged)="onListModeChanged($event)"></app-headeruser>
+  
+    <ng-container *ngIf="showListAsCard; else showTable">
+      <mat-grid-list cols="6" rowHeight="300px" class="my-grid-tile" gutterSize="10px">
+        <mat-grid-tile *ngFor="let user of ListUsers" [colspan]="(cardLayout | async)?.miniCard?.cols" [rowspan]="1">
+          <app-user-card [userData]="user"></app-user-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </ng-container>
+  
+    <ng-template #showTable>
+      <app-user-tabel [userData]="ListUsers"></app-user-tabel>
+    </ng-template>
+  </div>
+  

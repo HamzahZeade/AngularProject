@@ -1,0 +1,47 @@
+
+<mat-sidenav-container class="sidenav-container" style="background-color: #f0f5fb;">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/">
+        <mat-icon svgIcon="home"></mat-icon> Home
+      </a>
+      <a mat-list-item href="/users">
+        <mat-icon svgIcon="users"></mat-icon> Users
+      </a>
+      <a mat-list-item href="/blogs">
+        <mat-icon svgIcon="users"></mat-icon> Blogs
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <mat-toolbar  style="background-color: #ffffff;">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>
+        <img src="assets/icons/Loream.png" alt="App Logo"  style="margin-top: 10px;">
+        
+      </span>
+      <span class="spacer"></span>
+      <!-- Notification icon -->
+      <button mat-icon-button>
+        <mat-icon matBadge="3" matBadgeColor="warn" matBadgePosition="above after" aria-label="Notifications">notifications</mat-icon>
+      </button>
+      
+      <img src="assets/icons/logo.svg" alt="App Logo" class="logo">
+
+    </mat-toolbar>
+
+    <!-- Add Content Here -->
+    <router-outlet />
+  </mat-sidenav-content>
+</mat-sidenav-container>

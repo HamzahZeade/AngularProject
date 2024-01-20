@@ -1,0 +1,55 @@
+/*card.component.css*/
+
+.more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+ }
+ 
+ .dashboard-card {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+ }
+ 
+ // Define a class for the Proxima Nova font with specific styles
+.numberCard {
+    font-family: 'Proxima Nova', sans-serif; // Make sure to include Proxima Nova in your project
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48.72px;
+  }
+  .labelCard {
+    color: #506E85;
+    font-family: 'Proxima Nova', sans-serif; // Make sure to include Proxima Nova in your project
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.36px;
+  }
+  // Apply the Proxima Nova styles to your label elements
+//   .bold-label {
+//     @extend .numberCard;
+//   }
+  
+ .dashboard-card-content {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+    justify-content: center;
+    align-items: stretch;
+ }
+ 
+ mat-card {
+    display: flex;
+    flex-direction: column;
+ }
+
+ mat-grid-tile {
+    background: lightblue;
+  }
+ 

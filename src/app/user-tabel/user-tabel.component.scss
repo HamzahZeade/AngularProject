@@ -1,0 +1,45 @@
+
+.container {
+    margin: 10px;
+    margin-right: 10px;
+  }
+
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .example-header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+
+  /* user-tabel.component.scss */
+
+.filter-field {
+    display: flex !important;
+    align-items: start !important;
+  
+    
+  }
+  
+  .filter-icon {
+    margin-right: 8px; /* Adjust the spacing between the icon and the input */
+    font-size: 18px; /* Set the font size of the icon */
+    color: #fff; /* Set the color of the icon */
+  }
+  
+  /* Add any additional styles as needed */
+  
+  
